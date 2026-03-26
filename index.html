@@ -3,51 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шуточный Бот</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <style>
-        body { font-family: sans-serif; background: var(--tg-theme-bg-color); color: var(--tg-theme-text-color); }
-        button { padding: 15px; margin: 10px; width: 90%; background: var(--tg-theme-button-color); color: var(--tg-theme-button-text-color); }
-    </style>
+    <title>Главная</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Тестовая главная надпись</h1>
-    <button id="jokeBtn">Кнопка 1</button>
-    <button id="closeBtn">Кнопка 2</button>
+    <header>
 
-    <script>
-        const webApp = window.Telegram.WebApp;
-        webApp.ready();           // убираем загрузочный экран
-        webApp.expand();          // растягиваем на всю высоту
-
-        // Кнопка "Сказать шутку"
-        document.getElementById('jokeBtn').addEventListener('click', () => {
-            webApp.sendData('joke');   // отправляем строку в бот
-        });
-
-        // Кнопка закрытия
-        document.getElementById('closeBtn').addEventListener('click', () => {
-            webApp.close();
-        });
-
-        // Пример: можно реагировать на тему Telegram
-        console.log('Тема:', webApp.themeParams);
-    </script>
-    <table border="2">
-    <thead>
-        <tr>
-            <td>paramer1</td>
-            <td>paramtr2</td>
-            <td>paramtr3</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>value1</td>
-            <td></td>
-            <td>value2</td>
-        </tr>
-    </tbody>
-</table>
+    </header>
+    <main>
+        <table>
+            <tr><th><button class="main-button">Оn одной до другой станции</button></th></tr>
+            <tr><th><button class="main-button">График по одной станции</button></th></tr>
+            <tr><th><button class="main-button">График конкретного поезда</button></th></tr>
+        </table>
+    </main>
 </body>
 </html>
